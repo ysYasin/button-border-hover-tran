@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat&family=Oswald&family=Pangolin&family=Vina+Sans&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 100vh;
+    background: #45b5e9;
+    display: grid;
+    place-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 35px;
+    padding: 10px 30px;
+    background: #79258e;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 109%;
+    box-sizing: border-box;
+    display: block;
+    height: 131%;
+    border-top: 5px solid rgb(246, 122, 6);
+    border-left: 5px solid rgb(246, 122, 6);
+    top: -10px;
+    left: -10px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 106%;
+    display: block;
+    height: 122%;
+    border-bottom: 5px solid rgb(246, 122, 6);
+    border-right: 5px solid rgb(246, 122, 6);
+    bottom: -10px;
+    right: -10px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a:hover:after {
+    height: 40%;
+    width: 16%;
+}
+
+nav a:hover::before {
+    height: 40%;
+    width: 16%;
+}
